@@ -5,43 +5,45 @@ html {
 body {
   color: #000000;
   width: 100%;
-  max-width: 640px;
+  max-width: 1100px;
   background-color: white;
   margin: 20px;
+  text-align: center;
 }
 
 .celek {
-  margin: 0;
   width: 100%;
   max-width: 640px;
   border-color: grey;
   border-width: 1px;
   border-style: solid;
   background-color: #fafafa;
-
-  padding: 0 20px;
+  padding: 20px;
 }
 
-@media screen and (min-device-width: 640px) {
+@media screen and (min-width: 640px) {
   .celek {
     width: 100%;
     max-width: 1100px;
   }
 }
 
-@media screen and (min-device-width: 1100px) {
+@media screen and (min-width: 1100px) {
   .celek {
+    margin: 0;
     width: 100%;
-    position: relative;
+    max-width: 1100px;
+    padding: 60px 80px;
   }
 }
 
-.traveler {
-  display: flex;
-  justify-content: center;
-  margin: auto;
-  max-width: 350px;
-  width: 100%;
+@media screen and (min-width: 1100px) {
+  .textfoto {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-around;
+  }
 }
 
 h1 {
@@ -50,13 +52,6 @@ h1 {
   margin: 0;
   font-size: 28px;
   line-height: 37px;
-}
-
-h2 {
-  font-family: "Montserrat", sans-serif;
-  text-align: center;
-  font-size: 16px;
-  line-height: 21px;
 }
 
 p {
@@ -68,24 +63,80 @@ p {
   padding: 0 20px;
 }
 
+@media screen and (min-width: 1100px) {
+  p {
+    text-align: left;
+    padding-top: 20px;
+    padding-left: 0;
+  }
+}
+
+@media screen and (min-width: 1100px) {
+  .textbuttony {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 100%;
+    max-width: 490px;
+  }
+}
+
+@media screen and (min-width: 1100px) {
+  .text {
+    max-width: 490px;
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+  }
+}
+
 a {
   color: white;
   text-decoration: none;
   font-family: "Montserrat", sans-serif;
   font-size: 14px;
   line-height: 18px;
-  padding-top: 20px;
-}
-
-ul {
-  padding: 0;
 }
 
 .buttony {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   margin: 0;
+}
+
+@media screen and (min-width: 640px) {
+  .buttony {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+}
+
+@media screen and (min-width: 1100px) {
+  .buttony {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+.traveler {
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  max-width: 350px;
+  width: 100%;
+}
+
+@media screen and (min-width: 1100px) {
+  .traveler {
+    width: 100%;
+    max-width: 425px;
+    margin: 0;
+  }
 }
 
 .dobrodruzstvi {
@@ -93,9 +144,7 @@ ul {
   border: none;
   border-radius: 30px 30px;
   height: 30px;
-  display: flex;
-  justify-content: center;
-  padding: 5% 5% 0px 5%;
+  padding: 20px 5% 10px 5%;
   margin-top: 20px;
   max-width: 200px;
   width: 100%;
@@ -107,19 +156,36 @@ ul {
   border: none;
   border-radius: 30px 30px;
   height: 30px;
-  display: flex;
-  justify-content: center;
-  padding: 5% 5% 0px 5%;
-  margin-top: 10px;
+  padding: 20px 5% 10px 5%;
+  margin-top: 20px;
   max-width: 220px;
   width: 100%;
   text-align: center;
 }
 
 .cestovka,
-.uvodtext,
 .delegat {
   padding-top: 50px;
+}
+
+@media screen and (min-width: 1100px) {
+  .cestovka {
+    padding-top: 0;
+    padding-left: 60px;
+  }
+}
+
+h2 {
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
+  font-size: 16px;
+  line-height: 21px;
+}
+
+@media screen and (min-width: 1100px) {
+  h2 {
+    text-align: left;
+  }
 }
 
 h4 {
@@ -127,31 +193,61 @@ h4 {
   font-weight: lighter;
   font-size: 13px;
   line-height: 17px;
-  text-align: left;
   color: grey;
   padding: 15px 20px;
   text-align: center;
-}
-
-div .map {
+  align-items: center;
   display: flex;
-  height: 80px;
-  max-width: 460px;
-  width: 100%;
-  text-align: center;
-  border-radius: 10px;
-  box-shadow: 1px 4px 6px #407bff1f;
-  padding: 0 5%;
 }
 
-.map img {
+.dlazdice1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 10px;
+}
+
+@media screen and (min-width: 640px) {
+  .dlazdice1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+}
+
+@media screen and (min-width: 1100px) {
+  .dlazdice1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    max-width: 550px;
+    width: 100%;
+  }
+}
+
+.map img .cactus img .plane img {
   max-width: 45px;
   width: 100%;
-  height: 40px;
+  max-height: 40px;
+  height: 100%;
   padding: 20px;
 }
 
-div .cactus {
+.palm img .umbrella img .rv img {
+  max-width: 45px;
+  width: 100%;
+  max-height: 40px;
+  height: 100%;
+  padding: 20px;
+}
+
+.map,
+.cactus,
+.plane,
+.palm,
+.umbrella,
+.rv {
   display: flex;
   height: 80px;
   max-width: 460px;
@@ -162,76 +258,53 @@ div .cactus {
   padding: 0 5%;
 }
 
-.cactus img {
-  width: 45px;
-  height: 40px;
-  padding: 20px;
+@media screen and (min-width: 1100px) {
+  .map,
+  .cactus,
+  .plane,
+  .palm,
+  .umbrella,
+  .rv {
+    display: flex;
+    flex-direction: column;
+    max-height: 190px;
+    height: 100%;
+    padding: 0;
+  }
 }
 
-div .plane {
+@media screen and (min-width: 1100px) {
+  .cestovkabox {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    padding-top: 80px;
+    align-items: center;
+  }
+}
+
+.dlazdice2 {
   display: flex;
-  height: 80px;
-  max-width: 460px;
-  width: 100%;
-  text-align: center;
-  border-radius: 10px;
-  box-shadow: 1px 4px 6px #407bff1f;
-  padding: 0 5%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 10px;
 }
 
-.plane img {
-  width: 45px;
-  height: 40px;
-  padding: 20px;
+@media screen and (min-width: 640px) {
+  .dlazdice2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
 }
 
-div .palm {
-  display: flex;
-  height: 80px;
-  max-width: 460px;
-  width: 100%;
-  text-align: center;
-  border-radius: 10px;
-  box-shadow: 1px 4px 6px #407bff1f;
-  padding: 0 5%;
-}
-
-.palm img {
-  width: 45px;
-  height: 40px;
-  padding: 20px;
-}
-
-div .umbrella {
-  display: flex;
-  height: 80px;
-  max-width: 460px;
-  width: 100%;
-  text-align: center;
-  border-radius: 10px;
-  box-shadow: 1px 4px 6px #407bff1f;
-  padding: 0 5%;
-}
-
-.umbrella img {
-  width: 45px;
-  height: 40px;
-  padding: 20px;
-}
-
-div .rv {
-  display: flex;
-  height: 80px;
-  max-width: 460px;
-  width: 100%;
-  text-align: center;
-  border-radius: 10px;
-  box-shadow: 1px 4px 6px #407bff1f;
-  padding: 0 5%;
-}
-
-.rv img {
-  width: 45px;
-  height: 40px;
-  padding: 20px;
+@media screen and (min-width: 1100px) {
+  .delegatbox {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-top: 80px;
+    align-items: center;
+  }
 }
